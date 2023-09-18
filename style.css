@@ -1,0 +1,19 @@
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+#btn{
+    font-size: 30px;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 25%;
+}
