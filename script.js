@@ -11,6 +11,7 @@ function main(){
     // Update the total by adding x to it
     let total = currentTot + x;
 
+
     // Update the content of the result element
     document.getElementById("result").innerHTML = total;
 
@@ -23,6 +24,25 @@ function main(){
 
         document.body.appendChild(img);
     }
+
+
+    if(total < 21){
+        Document.getElementById('mainResult').innerHTML = "Generate Another Card";
+    }
+    else if(total == 21){
+        document.getElementById('mainResult').innerHTML= "You are won";
+        alert("Congradulations...!");
+        document.getElementById("reset-btn").style.display = "block";
+    }
+    else if(total > 21){
+        document.getElementById('mainResult').innerHTML= "Play again!";
+        alert("Play again...!");
+        document.getElementById("reset-btn").style.display = "block";
+    }
     
-    
+
+}
+
+function restart(){
+    location.reload();
 }

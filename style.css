@@ -10,7 +10,7 @@ h1{
     text-align: center;
 }
 
-#btn{
+#btn, #reset-btn{
     font-size: 30px;
     padding: 5px 15px;
     cursor: pointer;
@@ -21,3 +21,13 @@ h1{
 h3{
     color: aliceblue;
 }
+
+#reset-btn{
+    display: none;
+    padding-top: 10px;
+}
+
+img{
+    margin-left: 10px;
+}
+
