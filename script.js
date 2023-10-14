@@ -4,13 +4,16 @@ function main(){
 
     var img = document.createElement("img");
 
+    let total=0;
+    
     
     // Get the current total, parse it to a number, or set it to 0 if it's NaN or empty
     let currentTot = parseInt(document.getElementById("result").innerHTML) || 0;
-    
-    // Update the total by adding x to it
-    let total = currentTot + x;
 
+    if(currentTot < 21){
+
+    // Update the total by adding x to it
+    total = currentTot + x;
 
     // Update the content of the result element
     document.getElementById("result").innerHTML = total;
@@ -24,6 +27,7 @@ function main(){
 
         document.body.appendChild(img);
     }
+}
 
 
     if(total < 21){
@@ -40,7 +44,6 @@ function main(){
         document.getElementById("reset-btn").style.display = "block";
     }
     
-
 }
 
 function restart(){

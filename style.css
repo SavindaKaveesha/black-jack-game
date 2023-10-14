@@ -31,3 +31,7 @@ img{
     margin-left: 10px;
 }
 
+.grid-containter{
+    display: grid;
+}
+

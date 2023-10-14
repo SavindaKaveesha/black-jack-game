@@ -9,16 +9,40 @@
 <body>
 
     <script src="script.js"></script>
+
+
+    <div class="grid-containter">
+        <div class="header">
+            <h1>Black Jack Game</h1>
+        </div>
+
+        <div class="current-total">
+            <h3> Current Total : </h3>
+        </div>
+
+        <div class="current-total-display">
+            <h3 id="result"></h3>
+        </div>
+
+        <div class="generate-card">
+            <button id="btn" onclick="main()">Generate Card</button>
+        </div>
+
+        <div class="play-again">
+            <button id="reset-btn" onclick="restart()">Restart</button>
+        </div>
+
+        <div class="result">
+            <h1 id="mainResult"></h1>
+        </div>
+        <div class="card-display"></div>
+    </div>
     
-<h1>Black Jack Game</h1>
 
-<h3> Current Total : </h3><h3 id="result"></h3>
 
-<button id="btn" onclick="main()">Generate Card</button>
 
-<button id="reset-btn" onclick="restart()">Restart</button>
 
-<h1 id="mainResult"></h1>
+
 
 </body>
 </html>
